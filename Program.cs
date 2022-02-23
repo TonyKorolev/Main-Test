@@ -11,3 +11,15 @@ void PrintArray(string[] array)
     }
     Console.WriteLine();
 }
+
+// Создание метода подсчета длины массива, в котором будут храниться элементы строк длиной не больше 3
+int FindLengthNewArray (string[] array)
+{
+    int NumberOfElements = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3) NumberOfElements++;
+    }
+    return NumberOfElements;
+}
+
