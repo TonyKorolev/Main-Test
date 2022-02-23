@@ -61,6 +61,56 @@
                         <mxPoint x="330" y="370" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
+                <mxCell id="15" value="&lt;span&gt;i from 0 to array.Lenght, i++&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="379" y="100" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="PrintArray (array)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.045;" vertex="1" parent="1">
+                    <mxGeometry x="339" y="40" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="16" target="15">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="580" y="270" as="sourcePoint"/>
+                        <mxPoint x="630" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="print array[i]" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="339" y="180" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="15" target="18">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="419" y="360" as="sourcePoint"/>
+                        <mxPoint x="469" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="End" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="339" y="280" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="18" target="15">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="439" y="240" as="sourcePoint"/>
+                        <mxPoint x="379" y="140" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="439" y="240"/>
+                            <mxPoint x="319" y="240"/>
+                            <mxPoint x="319" y="210"/>
+                            <mxPoint x="319" y="130"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="15" target="20">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="549" y="240" as="sourcePoint"/>
+                        <mxPoint x="599" y="190" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="559" y="130"/>
+                            <mxPoint x="559" y="260"/>
+                            <mxPoint x="439" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="Note - This method is used for PrintArray (newArray) too" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="318.5" width="241" height="40" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
