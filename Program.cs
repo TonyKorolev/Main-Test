@@ -8,7 +8,7 @@ void PrintArray(string[] array)
     Console.Write("[");
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] == array[array.Length-1]) Console.Write($"{array[i]}");
+        if (i == (array.Length-1)) Console.Write($"{array[i]}");
         else Console.Write($"{array[i]}, ");
     }
     Console.Write("]");
@@ -43,6 +43,8 @@ string[] CreatArrayWithElementsLengthNoMore3(string[] array, int lengthNewArrayM
 
 // Исходная программа
 string[] array = { "hello", "2", "world", ":-)" };
+// string[] array = { "1234", "1567", "-2", "computer science" };
+// string[] array = { "Russia", "Denmark", "Kazan" };
 PrintArray(array);
 int lengthNewArray = FindLengthNewArray(array);
 string[] newArray = CreatArrayWithElementsLengthNoMore3(array, lengthNewArray);
