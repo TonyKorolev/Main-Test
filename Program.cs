@@ -5,11 +5,13 @@
 // Метод вывода массива строк
 void PrintArray(string[] array)
 {
+    Console.Write("[");
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write($"{array[i]} ");
+        if (array[i] == array[array.Length-1]) Console.Write($"{array[i]}");
+        else Console.Write($"{array[i]}, ");
     }
-    Console.WriteLine();
+    Console.Write("]");
 }
 
 // Метод нахождения длины массива строк, в котором будут храниться элементы длиной не больше 3
@@ -26,7 +28,7 @@ int FindLengthNewArray(string[] array)
 // Метод создания нового массива строк, в котором будут храниться элементы строк длиной не больше 3
 string[] CreatArrayWithElementsLengthNoMore3(string[] array, int lengthNewArrayMethod)
 {
-    string newArrayMethod = new string[lengthNewArrayMethod];
+    string[] newArrayMethod = new string[lengthNewArrayMethod];
     int j = 0;
     for (int i = 0; i < array.Length; i++)
     {
@@ -39,5 +41,10 @@ string[] CreatArrayWithElementsLengthNoMore3(string[] array, int lengthNewArrayM
     return newArrayMethod;
 }
 
-
-
+// Исходная программа
+string[] array = { "hello", "2", "world", ":-)" };
+PrintArray(array);
+int lengthNewArray = FindLengthNewArray(array);
+string[] newArray = CreatArrayWithElementsLengthNoMore3(array, lengthNewArray);
+Console.Write(" -> ");
+PrintArray(newArray);
