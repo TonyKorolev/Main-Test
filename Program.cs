@@ -2,7 +2,7 @@
 // Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. 
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
-// Создание метода вывода массива
+// Метод вывода массива строк
 void PrintArray(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -12,8 +12,8 @@ void PrintArray(string[] array)
     Console.WriteLine();
 }
 
-// Создание метода подсчета длины массива, в котором будут храниться элементы строк длиной не больше 3
-int FindLengthNewArray (string[] array)
+// Метод нахождения длины массива строк, в котором будут храниться элементы длиной не больше 3
+int FindLengthNewArray(string[] array)
 {
     int NumberOfElements = 0;
     for (int i = 0; i < array.Length; i++)
@@ -22,4 +22,22 @@ int FindLengthNewArray (string[] array)
     }
     return NumberOfElements;
 }
+
+// Метод создания нового массива строк, в котором будут храниться элементы строк длиной не больше 3
+string[] CreatArrayWithElementsLengthNoMore3(string[] array, int lengthNewArrayMethod)
+{
+    string newArrayMethod = new string[lengthNewArrayMethod];
+    int j = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i].Length <= 3)
+        {
+            newArrayMethod[j] = array[i];
+            j++;
+        }
+    }
+    return newArrayMethod;
+}
+
+
 
